@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Galvanize's Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="galdelivery.css">
+  </head>
+
+  <body>
+    <nav class = "#0d47a1 blue darken-4">
+      <div class="nav-wrapper container">
+        <a href ="file:///Users/Kevin/Desktop/galvanize-delivers/home.html" class="brands-logo" >Galvanize delivery</a>
+        <ul class="right hide-on-med-and-down">
+         <li><a href="file:///Users/Kevin/Desktop/galvanize-delivers/order.html">Order Delivery</a></li>
+        </ul>
+      </div>
+    </nav>
+<!--Here is my main boday-->
+    <main class = "container">
+<!--beginning here is my First half of left side of page -->
+      <div class = "row">
+        <div name="left-hand side" class="col s7">
+        <div>
+          <p><font size = "6">Menu</font></p>
+        </div>
+
+        <div class="row">
+         <div class="col s12 m6">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/burger.jpg">
+               <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons" id = "burger">add</i></a> -->
+             </div>
+             <div class="card-content">
+               <span class="card-title sansserif" >Royale with Cheese</span>
+               <p class = "sansserif" id = "burgerprice">$ 8.99</p>
+             </div>
+             <div class="card-action icon-pink">
+                  <a href="#" style="color:#e91e63" id ="burgername"
+                  class="menuChoice" name="Royale with Cheese" slot="8.99">ADD TO ORDER</a>
+             </div>
+           </div>
+         </div>
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+            </div>
+            <div class = "card-content">
+              <span class="card-title sansserif">Arugula Pie</span>
+              <p class = "sansserif" id = "pizzaprice">$ 11.99</p>
+            </div>
+            <div class="card-action">
+                 <a href="#" style="color:#e91e63" id = "pizzaname" class="menuChoice"  name="Arugula Pie" slot="11.99">ADD TO ORDER </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--beginning here is my second half of the page -->
+       <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title sansserif" id = "ribs" >Smoked Swine</span>
+              <p class = "sansserif" id = "ribsprice">$14.99</p>
+            </div>
+            <div class="card-action">
+                 <a href="#" style="color:#e91e63" id = "ribsname"  class="menuChoice" name="Smoked Swine" slot="14.99">ADD TO ORDER</a>
+            </div>
+          </div>
+        </div>
+
+       <div class="col s12 m6">
+         <div class="card">
+           <div class="card-image">
+             <img src="img/ice_cream.jpg">
+           </div>
+           <div class = "card-content">
+             <span class="card-title sansserif">Ice Cream Biscut</span>
+             <p class = "sansserif" id = "icecreamprice">$ 7.99</p>
+           </div>
+           <div class="card-action">
+                <a href="#" style="color:#e91e63" id = "icecreamname" class="menuChoice" name="Ice Cream Biscut" slot = "7.99">ADD TO ORDER</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+    </div>
+<!-- Here is my right side of my page-->
+      <div class="col s5">
+        <div>
+          <p><font size = "6">Order</font></p>
+        </div>
+        <table class = "striped">
+          <thead>
+            <tr>
+                <th data-field="id">Name</th>
+                <th data-field="price" class = "right">Item Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+          <!-- here is my footer
+          <tfoot>
+            <tr>
+              <td></td>
+              <td>Subtotal</td>
+              <td class = "right" id = "subtotal">$180</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Tax</td>
+              <td class = "right" id = "tax">$180</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Total</td>
+              <td class= "right"id = "total">$180</td>
+            </tr>
+          </tfoot>
+           here is my footer-->
+        </table>
+
+        <section>
+        <div class="row summary"></div>
+        <div class="col s9 m9 l9">
+          <div class = "right-align">Subtotal</div>
+          <div class = "right-align">Tax</div>
+          <div class = "right-align">Total</div>
+        </div>
+        <div class="col s3 m3 l3">
+          <div id="subtotal" class = "right-align">$0.00</div>
+          <div id="tax" class = "right-align" >$0.00</div>
+          <div id="total" class = "right-align">$0.00</div>
+        </div><br><br>
+        </section><br><br>
+      <!--here is the bottom of my page-->
+          <div class="input-field col s12">
+            <i class="material-icons prefix icon-pink">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name</label>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix icon-pink">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+
+          <div class="input-field col s12" id = "end">
+            <i class="material-icons prefix icon-pink" >business</i>
+            <input id="icon_telephone" type="text" class="validate">
+            <label for="business">Address</label>
+          </div>
+          <div class = "center-btn">
+            <button id = "hit" type = "button" name = "button1" class="waves-effect waves-light btn-large pink align">PLACE ORDER</button>
+          </div>
+      </div>
+
+    </div>
+<!--beginning here is the ending of my right half of the page -->
+ </main>
+
+   <footer class="page-footer #0d47a1 blue darken-4">
+     <div class="container">
+       <div class="row">
+         <div class="col s9">
+           <h5 class="white-text">Company Bio</h5>
+           <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+         </div>
+         <div class="col s3">
+           <ul>
+             <li><a class="white-text" href="file:///Users/Kevin/Desktop/galvanize-delivers/home.html">Home</a></li>
+             <li><a class="white-text" href="file:///Users/Kevin/Desktop/galvanize-delivers/order.html">Order Delivery</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="footer-copyright">
+       <div class="container">
+       <p>@ 2016 Galvanize Delivers</p>
+       </div>
+     </div>
+   </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js">
+    </script>
+
+     <script type="text/javascript" src = "gdeliver.js"></script>
+  </body>
+</html>
