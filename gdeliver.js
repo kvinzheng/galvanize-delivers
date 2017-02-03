@@ -13,19 +13,20 @@ function appendTable(){
   item.className = "left-align";
   price.className = "right-align";
 
-  var foodname = document.createTextNode(this.name)
-  var x = this.slot.toString();
-  // console.log(typeof this.slot);
-  // console.log(typeof x);
-  var foodprice = document.createTextNode('$' + x)
+  console.log(this);
+  var foodname = this.getAttribute('name');
+  var foodprice = this.getAttribute('data-value');
+  console.log(typeof foodname);
+  console.log(typeof foodprice);
+  var foodpricetag = '$' + foodprice;
 
-  item.appendChild(foodname);
-  price.appendChild(foodprice);
+  item.innerText = foodname;
+  price.innerText = foodpricetag;
   row.appendChild(item);
   row.appendChild(price);
   tbody.appendChild(row);
 
-  addition(parseFloat(foodprice.textContent.substring(1)));
+  addition(parseFloat(foodpricetag.substring(1)));
   return tbody;
 }
 
