@@ -16,8 +16,8 @@ function appendTable(){
   console.log(this);
   var foodname = this.getAttribute('name');
   var foodprice = this.getAttribute('data-value');
-  console.log(typeof foodname);
-  console.log(typeof foodprice);
+  console.log(foodname);
+  console.log(foodprice);
   var foodpricetag = '$' + foodprice;
 
   item.innerText = foodname;
