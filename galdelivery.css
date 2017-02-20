@@ -28,6 +28,9 @@
     top:0px;
     z-index:-1;
 }
+.iconleft {
+  float:left;
+}
 #index-banner{
   background-image: url("img/hero.jpg");
 }
